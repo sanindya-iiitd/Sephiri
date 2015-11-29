@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FilePickerActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/FilePickerLayout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File to Encrypt"
+        android:id="@+id/btn_encrypt"
+        android:layout_gravity="top|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File to Decrypt"
+        android:id="@+id/btn_decrypt"
+        android:layout_gravity="bottom|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload File"
+        android:id="@+id/btn_share"
+        android:layout_gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_file_path"
+        android:layout_gravity="top|start" />
+
+</LinearLayout>
