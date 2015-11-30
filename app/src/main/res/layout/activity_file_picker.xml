@@ -4,34 +4,86 @@
     android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FilePickerActivity"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="vertical" style="@style/AppTheme"
     android:id="@+id/FilePickerLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_original_file"
+        android:layout_gravity="top|start" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose File to Encrypt"
+        android:text="Select File from Phone to Encrypt"
+        android:id="@+id/btn_choose_local"
+        android:layout_gravity="top|center_horizontal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt the Selected Local File"
         android:id="@+id/btn_encrypt"
         android:layout_gravity="top|center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose File to Decrypt"
+        android:text="Upload the Encrypted File to Google Drive"
+        android:id="@+id/btn_share"
+        android:layout_gravity="top|center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/separator_top1"
+        android:layout_gravity="top|start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/separator_top2"
+        android:layout_gravity="top|start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/separator_bottom1"
+        android:layout_gravity="top|start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/separator_bottom2"
+        android:layout_gravity="top|start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download File from Drive to Decrypt"
+        android:id="@+id/btn_choose_drive"
+        android:layout_gravity="bottom|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt the Downloaded File"
         android:id="@+id/btn_decrypt"
         android:layout_gravity="bottom|center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload File"
-        android:id="@+id/btn_share"
-        android:layout_gravity="center|center_horizontal" />
+        android:text="View the Decrypted File"
+        android:id="@+id/btn_view"
+        android:layout_gravity="bottom|center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_file_path"
-        android:layout_gravity="top|start" />
+        android:id="@+id/txt_decrypted_file"
+        android:layout_gravity="bottom|start" />
 
 </LinearLayout>
